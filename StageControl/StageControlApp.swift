@@ -11,9 +11,7 @@ import SwiftUI
 struct StageControlApp: App {
     var body: some Scene {
         MenuBarExtra("StageControl", systemImage: "square.3.layers.3d.down.right") {
-            ScrollView {
-                ContentView()
-            }
+            ContentView()
         }
         .menuBarExtraStyle(.window)
     }

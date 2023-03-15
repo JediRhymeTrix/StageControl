@@ -5,6 +5,7 @@
 //  Created by Vedant Vohra on 3/15/23.
 //
 
+import AppKit
 import SwiftUI
 
 class ContentViewModel: ObservableObject {
@@ -35,15 +36,27 @@ class ContentViewModel: ObservableObject {
         return [:]
     }
     
+    @objc
     private func getSpaces() -> [String: UInt32] {
-        let spaces = [String: UInt32]()
+        let screens = NSScreen.screens
+        let workspace = NSWorkspace.shared
         
-        let plistFileName = "~/Library/Preferences/com.apple.spaces.plist"
-        let spacesPlist = readPlist(path: plistFileName)
-        
-        print(spacesPlist)
-        
-        return spaces
+        for screen in screens {
+            if let screenFrame = screen.frame as? CGRect {
+                let runningApps = workspace.runningApplications
+                for app in runningApps {
+                    if app.isActive {
+                        if let windows: Any = app.windows {
+                            for window in windows {
+                                if window.isOnActiveSpace && window.frame.intersects(screenFrame) {
+                                    print("Desktop on screen \(screen) belongs to app \(app)")
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     
     private func readPlist(path: String) -> [String: String] {

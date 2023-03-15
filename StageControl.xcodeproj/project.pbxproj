@@ -10,6 +10,7 @@
 		6F3B097629C2068700C9A4B0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B097529C2068700C9A4B0 /* SettingsView.swift */; };
 		6F3B097A29C2097600C9A4B0 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B097929C2097600C9A4B0 /* SettingsModel.swift */; };
 		6F3B097D29C20D4D00C9A4B0 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B097C29C20D4D00C9A4B0 /* SettingsViewModel.swift */; };
+		6F3B097F29C2354500C9A4B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B097E29C2354500C9A4B0 /* AppDelegate.swift */; };
 		6FC1956229C1EE8900FD0E85 /* StageControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC1956129C1EE8900FD0E85 /* StageControlApp.swift */; };
 		6FC1956629C1EE8B00FD0E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FC1956529C1EE8B00FD0E85 /* Assets.xcassets */; };
 		6FC1956929C1EE8B00FD0E85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FC1956829C1EE8B00FD0E85 /* Preview Assets.xcassets */; };
@@ -39,6 +40,7 @@
 		6F3B097529C2068700C9A4B0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		6F3B097929C2097600C9A4B0 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		6F3B097C29C20D4D00C9A4B0 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		6F3B097E29C2354500C9A4B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FC1955E29C1EE8900FD0E85 /* StageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FC1956129C1EE8900FD0E85 /* StageControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageControlApp.swift; sourceTree = "<group>"; };
 		6FC1956529C1EE8B00FD0E85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				6FC1956529C1EE8B00FD0E85 /* Assets.xcassets */,
 				6FC1956A29C1EE8B00FD0E85 /* StageControl.entitlements */,
 				6FC1956729C1EE8B00FD0E85 /* Preview Content */,
+				6F3B097E29C2354500C9A4B0 /* AppDelegate.swift */,
 			);
 			path = StageControl;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				6F3B097A29C2097600C9A4B0 /* SettingsModel.swift in Sources */,
 				6F3B097629C2068700C9A4B0 /* SettingsView.swift in Sources */,
 				6FC1956229C1EE8900FD0E85 /* StageControlApp.swift in Sources */,
+				6F3B097F29C2354500C9A4B0 /* AppDelegate.swift in Sources */,
 				6F3B097D29C20D4D00C9A4B0 /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
