@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6FC1956229C1EE8900FD0E85 /* StageControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC1956129C1EE8900FD0E85 /* StageControlApp.swift */; };
+		6FC1956429C1EE8900FD0E85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC1956329C1EE8900FD0E85 /* ContentView.swift */; };
+		6FC1956629C1EE8B00FD0E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FC1956529C1EE8B00FD0E85 /* Assets.xcassets */; };
+		6FC1956929C1EE8B00FD0E85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FC1956829C1EE8B00FD0E85 /* Preview Assets.xcassets */; };
+		6FC1957429C1EE8B00FD0E85 /* StageControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC1957329C1EE8B00FD0E85 /* StageControlTests.swift */; };
+		6FC1957E29C1EE8B00FD0E85 /* StageControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC1957D29C1EE8B00FD0E85 /* StageControlUITests.swift */; };
+		6FC1958029C1EE8B00FD0E85 /* StageControlUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC1957F29C1EE8B00FD0E85 /* StageControlUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FC1957029C1EE8B00FD0E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FC1955629C1EE8900FD0E85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FC1955D29C1EE8900FD0E85;
+			remoteInfo = StageControl;
+		};
+		6FC1957A29C1EE8B00FD0E85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FC1955629C1EE8900FD0E85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FC1955D29C1EE8900FD0E85;
+			remoteInfo = StageControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6FC1955E29C1EE8900FD0E85 /* StageControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StageControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC1956129C1EE8900FD0E85 /* StageControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageControlApp.swift; sourceTree = "<group>"; };
+		6FC1956329C1EE8900FD0E85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6FC1956529C1EE8B00FD0E85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FC1956829C1EE8B00FD0E85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6FC1956A29C1EE8B00FD0E85 /* StageControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StageControl.entitlements; sourceTree = "<group>"; };
+		6FC1956F29C1EE8B00FD0E85 /* StageControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StageControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC1957329C1EE8B00FD0E85 /* StageControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageControlTests.swift; sourceTree = "<group>"; };
+		6FC1957929C1EE8B00FD0E85 /* StageControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StageControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FC1957D29C1EE8B00FD0E85 /* StageControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageControlUITests.swift; sourceTree = "<group>"; };
+		6FC1957F29C1EE8B00FD0E85 /* StageControlUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StageControlUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FC1955B29C1EE8900FD0E85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC1956C29C1EE8B00FD0E85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC1957629C1EE8B00FD0E85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FC1955529C1EE8900FD0E85 = {
+			isa = PBXGroup;
+			children = (
+				6FC1956029C1EE8900FD0E85 /* StageControl */,
+				6FC1957229C1EE8B00FD0E85 /* StageControlTests */,
+				6FC1957C29C1EE8B00FD0E85 /* StageControlUITests */,
+				6FC1955F29C1EE8900FD0E85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6FC1955F29C1EE8900FD0E85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FC1955E29C1EE8900FD0E85 /* StageControl.app */,
+				6FC1956F29C1EE8B00FD0E85 /* StageControlTests.xctest */,
+				6FC1957929C1EE8B00FD0E85 /* StageControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6FC1956029C1EE8900FD0E85 /* StageControl */ = {
+			isa = PBXGroup;
+			children = (
+				6FC1956129C1EE8900FD0E85 /* StageControlApp.swift */,
+				6FC1956329C1EE8900FD0E85 /* ContentView.swift */,
+				6FC1956529C1EE8B00FD0E85 /* Assets.xcassets */,
+				6FC1956A29C1EE8B00FD0E85 /* StageControl.entitlements */,
+				6FC1956729C1EE8B00FD0E85 /* Preview Content */,
+			);
+			path = StageControl;
+			sourceTree = "<group>";
+		};
+		6FC1956729C1EE8B00FD0E85 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6FC1956829C1EE8B00FD0E85 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6FC1957229C1EE8B00FD0E85 /* StageControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				6FC1957329C1EE8B00FD0E85 /* StageControlTests.swift */,
+			);
+			path = StageControlTests;
+			sourceTree = "<group>";
+		};
+		6FC1957C29C1EE8B00FD0E85 /* StageControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6FC1957D29C1EE8B00FD0E85 /* StageControlUITests.swift */,
+				6FC1957F29C1EE8B00FD0E85 /* StageControlUITestsLaunchTests.swift */,
+			);
+			path = StageControlUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FC1955D29C1EE8900FD0E85 /* StageControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FC1958329C1EE8B00FD0E85 /* Build configuration list for PBXNativeTarget "StageControl" */;
+			buildPhases = (
+				6FC1955A29C1EE8900FD0E85 /* Sources */,
+				6FC1955B29C1EE8900FD0E85 /* Frameworks */,
+				6FC1955C29C1EE8900FD0E85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StageControl;
+			productName = StageControl;
+			productReference = 6FC1955E29C1EE8900FD0E85 /* StageControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FC1956E29C1EE8B00FD0E85 /* StageControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FC1958629C1EE8B00FD0E85 /* Build configuration list for PBXNativeTarget "StageControlTests" */;
+			buildPhases = (
+				6FC1956B29C1EE8B00FD0E85 /* Sources */,
+				6FC1956C29C1EE8B00FD0E85 /* Frameworks */,
+				6FC1956D29C1EE8B00FD0E85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FC1957129C1EE8B00FD0E85 /* PBXTargetDependency */,
+			);
+			name = StageControlTests;
+			productName = StageControlTests;
+			productReference = 6FC1956F29C1EE8B00FD0E85 /* StageControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6FC1957829C1EE8B00FD0E85 /* StageControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FC1958929C1EE8B00FD0E85 /* Build configuration list for PBXNativeTarget "StageControlUITests" */;
+			buildPhases = (
+				6FC1957529C1EE8B00FD0E85 /* Sources */,
+				6FC1957629C1EE8B00FD0E85 /* Frameworks */,
+				6FC1957729C1EE8B00FD0E85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FC1957B29C1EE8B00FD0E85 /* PBXTargetDependency */,
+			);
+			name = StageControlUITests;
+			productName = StageControlUITests;
+			productReference = 6FC1957929C1EE8B00FD0E85 /* StageControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FC1955629C1EE8900FD0E85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6FC1955D29C1EE8900FD0E85 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					6FC1956E29C1EE8B00FD0E85 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6FC1955D29C1EE8900FD0E85;
+					};
+					6FC1957829C1EE8B00FD0E85 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6FC1955D29C1EE8900FD0E85;
+					};
+				};
+			};
+			buildConfigurationList = 6FC1955929C1EE8900FD0E85 /* Build configuration list for PBXProject "StageControl" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FC1955529C1EE8900FD0E85;
+			productRefGroup = 6FC1955F29C1EE8900FD0E85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FC1955D29C1EE8900FD0E85 /* StageControl */,
+				6FC1956E29C1EE8B00FD0E85 /* StageControlTests */,
+				6FC1957829C1EE8B00FD0E85 /* StageControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FC1955C29C1EE8900FD0E85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC1956929C1EE8B00FD0E85 /* Preview Assets.xcassets in Resources */,
+				6FC1956629C1EE8B00FD0E85 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC1956D29C1EE8B00FD0E85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC1957729C1EE8B00FD0E85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FC1955A29C1EE8900FD0E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC1956429C1EE8900FD0E85 /* ContentView.swift in Sources */,
+				6FC1956229C1EE8900FD0E85 /* StageControlApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC1956B29C1EE8B00FD0E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC1957429C1EE8B00FD0E85 /* StageControlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FC1957529C1EE8B00FD0E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC1957E29C1EE8B00FD0E85 /* StageControlUITests.swift in Sources */,
+				6FC1958029C1EE8B00FD0E85 /* StageControlUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FC1957129C1EE8B00FD0E85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FC1955D29C1EE8900FD0E85 /* StageControl */;
+			targetProxy = 6FC1957029C1EE8B00FD0E85 /* PBXContainerItemProxy */;
+		};
+		6FC1957B29C1EE8B00FD0E85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FC1955D29C1EE8900FD0E85 /* StageControl */;
+			targetProxy = 6FC1957A29C1EE8B00FD0E85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6FC1958129C1EE8B00FD0E85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6FC1958229C1EE8B00FD0E85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6FC1958429C1EE8B00FD0E85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StageControl/StageControl.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StageControl/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KrakenTech.StageControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6FC1958529C1EE8B00FD0E85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = StageControl/StageControl.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"StageControl/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KrakenTech.StageControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6FC1958729C1EE8B00FD0E85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KrakenTech.StageControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StageControl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StageControl";
+			};
+			name = Debug;
+		};
+		6FC1958829C1EE8B00FD0E85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KrakenTech.StageControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StageControl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/StageControl";
+			};
+			name = Release;
+		};
+		6FC1958A29C1EE8B00FD0E85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KrakenTech.StageControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = StageControl;
+			};
+			name = Debug;
+		};
+		6FC1958B29C1EE8B00FD0E85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = KrakenTech.StageControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = StageControl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FC1955929C1EE8900FD0E85 /* Build configuration list for PBXProject "StageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FC1958129C1EE8B00FD0E85 /* Debug */,
+				6FC1958229C1EE8B00FD0E85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FC1958329C1EE8B00FD0E85 /* Build configuration list for PBXNativeTarget "StageControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FC1958429C1EE8B00FD0E85 /* Debug */,
+				6FC1958529C1EE8B00FD0E85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FC1958629C1EE8B00FD0E85 /* Build configuration list for PBXNativeTarget "StageControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FC1958729C1EE8B00FD0E85 /* Debug */,
+				6FC1958829C1EE8B00FD0E85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FC1958929C1EE8B00FD0E85 /* Build configuration list for PBXNativeTarget "StageControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FC1958A29C1EE8B00FD0E85 /* Debug */,
+				6FC1958B29C1EE8B00FD0E85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FC1955629C1EE8900FD0E85 /* Project object */;
+}
