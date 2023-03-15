@@ -7,11 +7,9 @@
 
 import SwiftUI
 
-class Settings: ObservableObject {
-    static let shared = Settings()
-    
-    private init() { }
-    
-    @AppStorage("config") var config: String = UserDefaults.standard.string(forKey: "config") ?? ""
+// Define a model to represent the checkbox state and the current desktop
+struct CheckboxModel {
+    var isChecked: Bool
+    var desktopName: String
 }
 

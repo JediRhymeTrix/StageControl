@@ -5,64 +5,63 @@
 //  Created by Vedant Vohra on 3/15/23.
 //
 
-import AppKit
+import Foundation
+import ScriptingBridge
 import SwiftUI
 
-class ContentViewModel: ObservableObject {
-    func mergeConfig() -> String {
-        let savedConfig = Settings.shared.config
-//        let savedConfigDict = try! JSONSerialization.jsonObject(with: savedConfig.data(using: .utf8)!, options: []) as! [Int32: Bool]
-        
-        let emptyConfig = createEmptyConfig()
-        
-//        if savedConfig == "" {
-//            return config
-//        }
-//        if config == "" {
-//            return savedConfig
-//        }
-//
-//        let configDict = try! JSONSerialization.jsonObject(with: config.data(using: .utf8)!, options: []) as! [String: Any]
-//
-//        let mergedConfig = try! JSONSerialization.data(withJSONObject: configDict.merging(savedConfigDict, uniquingKeysWith: { (current, _) in current }), options: [])
-//        return String(data: mergedConfig, encoding: .utf8)!
-        
-        return ""
+// Define a view model to handle the business logic
+class CheckboxViewModel: ObservableObject {
+    // Define a @Published property to hold the checkbox state and the current desktop
+    @Published var model: CheckboxModel
+    
+    init() {
+        // Initialize the model with the default values
+        model = CheckboxModel(isChecked: false, desktopName: "")
+        // Set the current desktop name
+        model.desktopName = getCurrentSpaceUUID()
+        // Retrieve the checkbox value from AppStorage
+        //        let desktopId = NSScreen.main?.displayIdentifier ?? ""
+        //        model.isChecked = UserDefaults.standard.bool(forKey: "checkboxValue_\(desktopId)")
     }
     
-    private func createEmptyConfig() -> [String: Bool] {
-        let spaces = getSpaces()
-        
-        return [:]
+    // Define a function to store the checkbox value in AppStorage
+    func saveCheckboxValue() {
+        //        let desktopId = NSScreen.main?.displayIdentifier ?? ""
+        //        UserDefaults.standard.set(model.isChecked, forKey: "checkboxValue_\(desktopId)")
     }
     
-    @objc
-    private func getSpaces() -> [String: UInt32] {
-        let screens = NSScreen.screens
-        let workspace = NSWorkspace.shared
-        
-        for screen in screens {
-            if let screenFrame = screen.frame as? CGRect {
-                let runningApps = workspace.runningApplications
-                for app in runningApps {
-                    if app.isActive {
-                        if let windows: Any = app.windows {
-                            for window in windows {
-                                if window.isOnActiveSpace && window.frame.intersects(screenFrame) {
-                                    print("Desktop on screen \(screen) belongs to app \(app)")
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+    // Define a helper function to get the name of the current desktop
+    func getCurrentSpaceUUID() -> String? {
+        // Create an instance of the Scripting Bridge Application object for System Events
+        guard let systemEvents = SBApplication(bundleIdentifier: "com.apple.systemevents") else {
+            return nil
         }
+        
+        // Get the current desktop's number
+        guard let currentDesktopNumber = systemEvents.desktops?().first?.number?() else {
+            return nil
+        }
+        
+        // Get the UUID of the space associated with the current desktop
+        let script = """
+        tell application "System Events"
+            set spaceUUID to UUID of (item \(currentDesktopNumber) of spaces preferences)
+            return spaceUUID
+        end tell
+        """
+        var error: NSDictionary?
+        guard let spaceUUID = systemEvents.executeAndReturnError(&error, withAppleEvent: script).stringValue else {
+            return nil
+        }
+        
+        return spaceUUID
     }
     
-    private func readPlist(path: String) -> [String: String] {
-        let contents = NSDictionary(contentsOfFile: path) as? [String: String] ?? [:]
+    private func getScreenWithMouse() -> NSScreen? {
+        let mouseLocation = NSEvent.mouseLocation
+        let screens = NSScreen.screens
+        let screenWithMouse = (screens.first { NSMouseInRect(mouseLocation, $0.frame, false) })
         
-        return contents
+        return screenWithMouse
     }
-                    
 }
